@@ -10,8 +10,8 @@
 
 body {
   height: 100%;
-  color: #333;
-  background-color: #f0f0f0;
+  color: #fff;
+  background-color: #181818;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,13 +22,14 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(60, 60, 60);
+  background-color: #333;
   padding: 10px 20px;
 }
 
@@ -46,6 +47,10 @@ h1 {
   color: white;
   text-decoration: none;
   padding: 10px;
+}
+
+.navbar ul li a:hover {
+  color: #7bd360;
 }
 
 .search-container {
@@ -67,11 +72,27 @@ h1 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .search-button:hover {
   background-color: #45a049;
   transform: scale(1.1);
+}
+
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #252525;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #bbbbbb;
 }
 
 .section {
@@ -83,12 +104,17 @@ h1 {
 }
 
 .card {
-  border: 1px solid #baababed;
+  border: 1px solid #444;
   border-radius: 8px;
   width: 240px;
   background-color: #333;
   padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .card img {
@@ -96,12 +122,13 @@ h1 {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .card p {
   font-size: 16px;
   line-height: 1.5;
-  color: white;
+  color: #cccccc;
   margin-bottom: 10px;
 }
 
@@ -112,6 +139,7 @@ h1 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn button:hover {
